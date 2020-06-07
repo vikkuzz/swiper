@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="swiper.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header class="header">
+    <span class="header__title">Ремонт техники различных брендов</span>
+  </header>
+  <!-- Swiper -->
+  <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!--Тут будут слайды-->
+      </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <template class="slide">
+    <div class="swiper-slide card"></div>
+  </template>
+
+  <!-- Swiper JS -->
+  <script src="swiper.min.js"></script>
+  <script src="slider.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesOffsetAfter: 0,
+      setWrapperSize: true,
+      width: 240,
+      spaceBetween: 16,
+      freeMode: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+</html>
