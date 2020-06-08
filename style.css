@@ -46,10 +46,11 @@
     .card {
         margin-bottom: 16px;
         margin-right: 32px;
+        width: 240px;
     }
 }
 
-@media (min-width: 768px), (max-width: 1119px){
+@media (max-width: 1119px) {
     .read-more-button {
         display: flex;
         background: url('../second-chance/img/read-more.svg') no-repeat 5% 50%;
@@ -76,6 +77,7 @@
     .card {
         margin-bottom:  16px;
         margin-right: 24px;
+        width: 224px;
     }
 
 }
@@ -91,6 +93,7 @@
     }
     .card {
         margin-right: 16px;
+        
     }
 }
 
@@ -119,7 +122,7 @@ body {
 .card {
     display: flex;
     align-items: center;
-    width: 240px;
+    
     height: 72px;
     background: #FFFFFF url('img/go.svg');
     background-position: right 16px bottom 16px;
