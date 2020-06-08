@@ -14,23 +14,25 @@
   <header class="header">
     <span class="header__title">Ремонт техники различных брендов</span>
   </header>
+  
   <!-- Swiper -->
-  <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <!--Тут будут слайды-->
-      </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
-  <template class="slide">
-    <div class="swiper-slide card"></div>
-  </template>
-
+    <div class="swiper-container" data-mobile="false">
+        <div class="swiper-wrapper">
+          <!--Тут будут слайды-->
+        </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <template class="slide">
+      <div class="swiper-slide card"></div>
+    </template>
+  
+  <button class="read-more-button hide-view-button button"><span class="button-text read-more-button__text">Показать всё</span></button>
   <!-- Swiper JS -->
   <script src="swiper.min.js"></script>
   <script src="slider.js"></script>
 
-  <!-- Initialize Swiper -->
+  <!-- Initialize Swiper 
   <script>
     var swiper = new Swiper('.swiper-container', {
       slidesOffsetAfter: 0,
@@ -42,6 +44,6 @@
         el: '.swiper-pagination',
       },
     });
-  </script>
+  </script>-->
 </body>
 </html>

@@ -19,9 +19,85 @@
 	font-weight: 700;
 	font-style: normal;
 }
+@media (min-width: 1120px) {
+    .read-more-button {
+        display: flex;
+        background: url('../second-chance/img/read-more.svg') no-repeat 5% 50%;
+        width: 140px;
+        padding-left: 25px;
+        margin: 16px 16px;
+    }
+    .swiper-container {
+        overflow: hidden;
+        width: 100%;
+        padding-top: 16px;
+    }
+    .swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        height: 160px;
+        overflow: hidden;
+        padding-top: 24px;
+    }
+    .swiper-wrapper--height {
+        display: flex;
+        height: auto;
+    }
+    .card {
+        margin-bottom: 16px;
+        margin-right: 32px;
+    }
+}
+
+@media (min-width: 768px, max-width: 1119px){
+    .read-more-button {
+        display: flex;
+        background: url('../second-chance/img/read-more.svg') no-repeat 5% 50%;
+        width: 140px;
+        padding-left: 25px;
+        margin: 16px 16px;
+    }
+    .swiper-container {
+        overflow: hidden;
+        width: 100%;
+        padding-top: 16px;
+    }
+    .swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        height: 160px;
+        overflow: hidden;
+        padding-top: 24px;
+    }
+    .swiper-wrapper--height {
+        display: flex;
+        height: auto;
+    }
+    .card {
+        margin-bottom:  16px;
+        margin-right: 24px;
+    }
+
+}
+
+@media (max-width:767px){
+    .read-more-button {
+        display: none;
+    }
+    .swiper-wrapper {
+        padding-top: 16px;
+        height: 110px;
+        flex-wrap: nowrap;
+    }
+    .card {
+        margin-right: 16px;
+    }
+}
+
 
 body {
     margin: 0 auto;
+    background: #F8F8F8;
 }
 .header {
     display: flex;
@@ -64,10 +140,7 @@ body {
     margin: 0 auto;
     padding-left: 16px;
 }
-.swiper-wrapper {
-    padding-top: 16px;
-    height: 110px;
-}
+
 
 .swiper-pagination-bullet {
     width: 12px;
@@ -82,3 +155,36 @@ body {
     color:#fff;
     background: #B5B6BC;
   }
+
+.button {
+    outline: none;
+    cursor: pointer;
+    border: none; 
+    background-color: transparent;
+    border-radius: 2px;
+}
+.button:active {
+    transform: translateY(1px);
+}
+.button:focus {
+   box-shadow: 0 0 0 2px #B8FFEC;
+   background-color: white;
+ }
+.button:hover {
+    box-shadow: 0 0 0 2px #B8FFEC;
+    background-color: white;
+}
+.button-text  {
+    font-family: 'TTLakes', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    
+}
+.read-more-button__text {
+    color: #1B1C21;
+}
+.read-more-button__text--hide {
+    
+}
