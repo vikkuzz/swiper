@@ -93,9 +93,10 @@ function mobileSlider() {
       setWrapperSize: true,
       width: 240,
       spaceBetween: 16,
-      freeMode: true,
+      
       pagination: {
         el: '.swiper-pagination',
+        clickable: true,
       },
     });
 
@@ -123,13 +124,27 @@ var wrapp = document.querySelector('.swiper-wrapper');
 var changeText = document.querySelector('.swiper-wrapper--height');
 var buttonViewAll = document.querySelector('.read-more-button');
 var buttonText = document.querySelector('.read-more-button__text');
-buttonViewAll.onclick = function() {
+var textHide = 'Скрыть';
+var text = 'Показать всё';
 
-    wrapp.classList.toggle('swiper-wrapper--height');
+
+var isSlideShow = true;
+buttonViewAll.addEventListener("click", function() {
+    if (isSlideShow)
+{
+    wrapp.classList.add('swiper-wrapper--height');
+    buttonViewAll.classList.add('arrowUp');
     buttonText.textContent = 'Скрыть';
-
-};
-
+    isSlideShow  = false;
+}
+else
+{
+    wrapp.classList.remove('swiper-wrapper--height');
+    buttonViewAll.classList.remove('arrowUp');
+    buttonText.textContent = 'Показать всё';
+    isSlideShow  = true;
+}
+});
 
 
 
